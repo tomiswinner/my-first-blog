@@ -1,5 +1,19 @@
 <html>
   <body>
-    <p>さくらぎはなみち</p>
+    <div>
+      <p>さくらぎはなみち</p>
+    </div>
+
+
+    {% for post in posts %}
+      <div>
+        <p>5</p>
+        <p>post</p>
+        <p>published: {{post.published_date}}</p>
+        <h2><a href= "">{{post.title}}</a></h2>
+        <p>{{post.text|linebreaksbr}}</p>
+      </div>
+    {% endfor %}
+
   </body>
 </html>
